@@ -306,11 +306,37 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.container {
+
+
+/* Mobile */
+
+  .container {
   margin: 0 auto;
-  padding: 0 15px;
-  width: 1158px;
+  padding: 0 16px;
+  min-width: 320px;
+  max-width: 428px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+  }
+
+/* Tablet */
+
+@media screen and (min-width:768px) {
+  .container{
+    max-width: 768px;
+  }
 }
+
+/* Pc */
+
+@media only screen and (min-width:1158px) {
+  .container{
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
 
 .header-container {
   display: flex;
@@ -364,19 +390,38 @@ img {
   margin: 48px auto 0;
 }
 
-/* Formalization section 2*/
+/* Formalization Advantages*/
+
+.advantages{
+  max-width: 428px;
+}
 
 .advantages-container-list {
   display: flex;
-  gap: 24px;
-}
-
-.advantages-container-list-item {
-  width: calc((100% - 3 * 24px) / 4);
+  gap: 72px;
+  flex-wrap: wrap;
 }
 
 .advantages-h {
   margin-bottom: 8px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.advantages-p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  width: 396px;
 }
 
 .advantages-flex {
@@ -385,32 +430,159 @@ img {
   display: flex;
 }
 
+.advantages-icon{
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  .advantages{
+    max-width: 768px;
+  }
+  
+  .advantages-container-list {
+    display: flex;
+    row-gap: 72px;
+    column-gap: 24px;
+    flex-wrap: wrap;
+  }
+  
+  .advantages-container-list-item{
+    width: 356px;
+  }
+
+  .advantages-h {
+    margin-bottom: 8px;
+    text-align: left;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  
+  .advantages-p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    width: 356px;
+  }
+  
+  .advantages-flex {
+    padding: 120px 0;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .advantages-icon{
+    display: none;
+  }
+}
+
+@media only screen and (min-width:1158px) {
+  .advantages{
+    max-width: 1158px;
+  }
+  
+  .advantages-container-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  
+  .advantages-container-list-item{
+    width: 264px;
+  }
+
+  .advantages-h {
+    margin-bottom: 8px;
+    text-align: left;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+  }
+  
+  .advantages-p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    width: 264px;
+  }
+
+  .advantages-flex {
+    padding: 120px 0;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .advantages-icon{
+    display: flex;
+  }
+}
+
 /* Formalization section 3*/
 
-.deeds-flex {
-  padding-bottom: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 24px;
+.deeds-flex{
+    display: none;
+  }
+
+@media screen and (min-width:768px) {
+  .deeds-flex{
+    display: none;
+  }
 }
 
-.deeds-h {
-  margin-bottom: 72px;
-}
+@media screen and (min-width:1158px) {
+  
+  .deeds-flex {
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
 
-.deeds-list {
-  display: flex;
-  gap: 24px;
-}
+  .deeds-h {
+    text-align: center;
+    margin-bottom: 72px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    justify-content: center;
+  }
 
-.deeds-item {
-  display: block;
-  width: calc((100% - 48px) / 3);
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  .deeds-list {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .deeds-container {
+    padding: 0 15px;
+  }
+
+  .deeds-item {
+    display: flex;
+    width: 360px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
 }
 
 /* Formalization section 4*/
