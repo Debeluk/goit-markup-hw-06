@@ -592,22 +592,108 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 428px;
 }
 
 .team-h {
   margin-bottom: 72px;
+  text-align: center;
 }
 
 .team-list-flex {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
+  width: 264px;
 }
 
 .members-flex {
-  width: calc((100% - 3 * 24px) / 4);
+  width: 264px;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  display: flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+
+@media screen and (min-width:768px) {
+  .team-flex {
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 768px;
+  }
+  
+  .team-h {
+    margin-bottom: 72px;
+    text-align: center;
+  }
+  
+  .team-list-flex {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    width: 768px;
+    padding: 0 108px;
+  }
+  
+  .members-flex {
+    width: 264px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width:1158px) {
+
+  .team-flex {
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1158px;
+  }
+
+  .team-h {
+    margin-bottom: 72px;
+    text-align: center;
+  }
+  
+  .team-list-flex {
+    display: flex;
+    gap: 24px;
+    width: 1158px;
+    flex-wrap: nowrap;
+  }
+  
+  .members-flex {
+    width: 264px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
 }
 
 .name_job {
@@ -658,6 +744,10 @@ img {
 .social-icon {
   fill: #f4f4fd;
 }
+
+
+/* Customers */
+
 
 .customers-section {
   padding: 120px 0;
