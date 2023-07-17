@@ -1,3 +1,3 @@
-# goit-markup-hw-04
-GOIT Homework 4 
-https://debeluk.github.io/goit-markup-hw-04/
+# goit-markup-hw-06
+GOIT Homework 6 
+https://debeluk.github.io/goit-markup-hw-06/
