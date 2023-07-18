@@ -592,7 +592,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 428px;
 }
 
 .team-h {
@@ -628,7 +627,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 768px;
   }
   
   .team-h {
@@ -641,7 +639,6 @@ img {
     gap: 24px;
     flex-wrap: wrap;
     width: 768px;
-    padding: 0 108px;
   }
   
   .members-flex {
@@ -666,7 +663,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1158px;
   }
 
   .team-h {
@@ -750,7 +746,6 @@ img {
 
 .customers-section {
   padding: 120px 0;
-  max-width: 428px;
 }
 
 .customers-h {
@@ -778,7 +773,6 @@ img {
 @media screen and (min-width:768px) {
   .customers-section {
     padding: 120px 0;
-    max-width: 768px;
   }
   
   .customers-h {
@@ -809,7 +803,6 @@ img {
 @media screen and (min-width:1158px) {
   .customers-section {
     padding: 120px 0;
-    max-width: 1158px;
   }
   
   .customers-h {
@@ -889,7 +882,6 @@ img {
 
 .footer-flex {
   padding: 100px 0;
-  max-width: 428px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -900,11 +892,9 @@ img {
   align-items: center;
   text-align: center;
   justify-content: center;
-  width: 428px;
 }
 
 .p-footer {
-  max-width: 428px;
   justify-content: center;
   display: flex;
   padding-bottom: 72px;
@@ -925,14 +915,16 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-bg-white);
   margin-bottom: 16px;
-  width: 428px;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .social-media-list {
   display: flex;
   gap: 16px;
   justify-content: center;
+  align-items: center;
   margin-bottom: 72px;
 }
 
