@@ -94,10 +94,16 @@ footer .logo-studio:focus {
   width: 100%;
   left: 0px;
   height: 4px;
-  bottom: -1px;
+  bottom: -27px;
   border-radius: 2px;
   background-color: #404bbf;
   position: absolute;
+}
+
+@media (min-width: 1158px) {
+  .list-navigation.active::after {
+    bottom: -27px;
+  }
 }
 
 .list {
@@ -179,9 +185,10 @@ footer .logo-studio:focus {
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  justify-content: space-between;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .menu-container {
     display: none;
   }
@@ -202,7 +209,6 @@ footer .logo-studio:focus {
   padding: 0;
   margin: 0;
   list-style: none;
-  padding-bottom: 217px;
 }
 
 .mobile-menu .link {
@@ -236,17 +242,27 @@ footer .logo-studio:focus {
   color: var(--button-background);
 }
 
-.mobile-menu-mail {
-  font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.4px;
-    color: var(--second-text-color);
-}
-
 .mobile-menu-icons {
   display: flex;
-  gap:56px;
+  gap: 56px;
+}
+
+@media(max-width:427px) {
+  .mobile-menu-contact{
+    font-size: 24px;
+  }
+
+  .mobile-menu-icons {
+    gap:32px;
+  }
+}
+
+.mobile-menu-mail {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: var(--second-text-color);
 }
 
 .hero-flex {
@@ -264,11 +280,10 @@ footer .logo-studio:focus {
     url(../images/backgroundhero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 428px;
   background-position: center;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .hero {
     padding: 112px 0;
     background-image: linear-gradient(
@@ -279,12 +294,11 @@ footer .logo-studio:focus {
       url(../images/backgroundhero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 768px;
     background-position: center;
   }
 }
 
-@media (min-width:1158px) {
+@media (min-width: 1158px) {
   .hero {
     padding: 188px 0;
     background-image: linear-gradient(
@@ -295,7 +309,6 @@ footer .logo-studio:focus {
       url(../images/backgroundhero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1440px;
     background-position: center;
   }
 }
@@ -478,13 +491,9 @@ img {
   padding-top: 0;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-@media (min-width:1158px) {
-  .header {
-    padding-bottom: 23.5px;
-    padding-top: 25.5px;
-  }
+  height: 72px;
+  justify-content: center;
+  display: flex;
 }
 
 /* Mobile */
@@ -516,6 +525,19 @@ img {
 .header-container {
   display: flex;
   justify-content: space-between;
+  width: 428px;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .header-container {
+    width: 1158px;
+  }
 }
 
 .nav-flex {
@@ -524,7 +546,6 @@ img {
 }
 
 .logo-header {
-  margin-right: 76px;
   font-family: Raleway;
   font-size: 18px;
   font-style: normal;
@@ -539,24 +560,20 @@ img {
   gap: 40px;
 }
 
-@media (min-width:768px) and (max-width:1439px) {
-  .logo-header{
-    margin-right: 120px; 
+@media (min-width: 768px) and (max-width: 1157px) {
+  .logo-header {
+    margin-right: 0;
   }
 
-  .address-flex{
+  .address-flex {
     flex-wrap: wrap;
-    row-gap:12px;
+    row-gap: 12px;
     column-gap: 0;
     justify-content: center;
     flex-direction: column;
   }
 
-  .nav-flex{
-    padding-right: 121px;
-  }
-
-  .address{
+  .address {
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
@@ -566,16 +583,10 @@ img {
   }
 }
 
-
 .menu-flex {
   display: flex;
   gap: 40px;
 }
-
-.menu-flex-item {
-  padding: 24px 0;
-}
-
 
 @media screen and (max-width: 767px) {
   .menu-flex {
@@ -587,8 +598,6 @@ img {
 }
 
 /* Formalization section 1*/
-
-
 
 .solutions-flex {
   display: flex;
@@ -646,11 +655,11 @@ img {
   display: flex;
 }
 
-@media (min-width:1158px){
+@media (min-width: 1158px) {
   .advantages-flex {
-  padding: 120px 0;
-  margin: 0 auto;
-  display: flex;
+    padding: 120px 0;
+    margin: 0 auto;
+    display: flex;
   }
 }
 
@@ -823,7 +832,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap:24px;
+  row-gap: 72px;
+  column-gap: 24px;
 }
 
 .members-flex {
@@ -836,7 +846,6 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
   flex-wrap: wrap;
 }
 
@@ -855,7 +864,8 @@ img {
 
   .team-list-flex {
     display: flex;
-    gap: 24px;
+    row-gap: 72px;
+    column-gap: 24px;
     flex-wrap: wrap;
     justify-content: center;
     padding-left: 0;
@@ -871,7 +881,6 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 32px;
     flex-wrap: wrap;
   }
 }
@@ -909,7 +918,6 @@ img {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    gap: 32px;
   }
 }
 
@@ -968,7 +976,7 @@ img {
   padding: 96px 0;
 }
 
-@media (min-width:1158px) {
+@media (min-width: 1158px) {
   .customers-section {
     padding: 120px 0;
   }
@@ -1111,7 +1119,7 @@ img {
   flex-wrap: wrap;
 }
 
-@media (min-width:1158px) {
+@media (min-width: 1158px) {
   .footer-flex {
     padding: 100px 0 100px 0;
     display: flex;
@@ -1165,6 +1173,12 @@ img {
   margin-bottom: 72px;
 }
 
+@media (min-width: 768px) {
+  .social-media-list {
+    margin-bottom: 0;
+  }
+}
+
 .social-media-list-item {
   width: 40px;
   height: 40px;
@@ -1191,7 +1205,7 @@ img {
   color: #ffffff;
   display: flex;
   justify-content: center;
-  width: 428px;
+  margin: 0 auto 16px;
 }
 
 .footer-form {
@@ -1277,14 +1291,13 @@ img {
 
   .social-media {
     display: block;
-    height: 64px;
   }
 
   .footer-container {
     flex-wrap: wrap;
     justify-content: left;
     gap: 72px 24px;
-    width: 556px;
+    width: 584px;
   }
 
   .social-media-p {
@@ -1395,11 +1408,13 @@ img {
   }
 
   .footer-site-info {
-    padding-right: 120px;
+    padding-right: 0;
+    margin-right: 120px;
   }
 
   .social-media-list {
-    padding-right: 80px;
+    padding-right: 0;
+    margin-right: 80px;
   }
 }
 
