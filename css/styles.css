@@ -313,12 +313,42 @@ footer .logo-studio:focus {
   }
 }
 
+.solutions-flex {
+  display: flex;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .solutions {
-  font-size: 56px;
-  font-weight: 900;
-  line-height: 1.07;
-  color: #ffffff;
+  color: var(--white, #FFF);
   text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+@media (min-width:768px) {
+  .solutions-flex {
+    display: flex;
+    max-width: 496px;
+    margin: 0 auto;
+  }
+  
+  .solutions {
+    color: var(--white, #FFF);
+    text-align: center;
+    /* Header 1 */
+    font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 107.143% */
+    letter-spacing: 1.12px;
+  }
 }
 
 .hero-button {
@@ -598,12 +628,6 @@ img {
 }
 
 /* Formalization section 1*/
-
-.solutions-flex {
-  display: flex;
-  max-width: 496px;
-  margin: 0 auto;
-}
 
 .hero-button-flex {
   display: block;
