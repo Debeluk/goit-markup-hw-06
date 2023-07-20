@@ -176,7 +176,7 @@ footer .logo-studio:focus {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 80px 0 40px 40px;
+  padding: 80px 0 60px 40px;
   background-color: var(--main-bg-white);
   z-index: 999;
   transform: translateX(100%);
