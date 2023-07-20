@@ -84,10 +84,6 @@ footer .logo-studio:focus {
   position: relative;
 }
 
-.trueactive {
-  color: #404bbf;
-}
-
 .list-navigation.active::after {
   content: '';
   display: block;
@@ -1728,4 +1724,8 @@ img {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 100px;
+}
+
+.trueactive {
+  color: #404bbf;
 }
