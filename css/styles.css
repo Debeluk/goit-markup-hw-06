@@ -243,13 +243,13 @@ footer .logo-studio:focus {
   gap: 56px;
 }
 
-@media(max-width:427px) {
-  .mobile-menu-contact{
+@media (max-width: 427px) {
+  .mobile-menu-contact {
     font-size: 24px;
   }
 
   .mobile-menu-icons {
-    gap:32px;
+    gap: 32px;
   }
 }
 
@@ -277,6 +277,7 @@ footer .logo-studio:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -309,6 +310,17 @@ footer .logo-studio:focus {
   }
 }
 
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/backgroundhero@2x.jpg);
+  }
+}
+
 .solutions-flex {
   display: flex;
   max-width: 320px;
@@ -316,7 +328,7 @@ footer .logo-studio:focus {
 }
 
 .solutions {
-  color: var(--white, #FFF);
+  color: var(--white, #fff);
   text-align: center;
   font-family: Roboto;
   font-size: 36px;
@@ -327,15 +339,15 @@ footer .logo-studio:focus {
   text-transform: capitalize;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .solutions-flex {
     display: flex;
     max-width: 496px;
     margin: 0 auto;
   }
-  
+
   .solutions {
-    color: var(--white, #FFF);
+    color: var(--white, #fff);
     text-align: center;
     /* Header 1 */
     font-family: Roboto;
@@ -1730,13 +1742,13 @@ img {
   color: #404bbf;
 }
 
-@media (min-width:320px) and (max-width:427px) {
+@media (min-width: 320px) and (max-width: 427px) {
   .modal {
     width: 300px;
     padding: 56px 24px 24px 24px;
   }
 
-  .form-button{
+  .form-button {
     margin: 0 40px;
   }
 }
