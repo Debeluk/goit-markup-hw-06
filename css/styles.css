@@ -1729,3 +1729,14 @@ img {
 .trueactive {
   color: #404bbf;
 }
+
+@media (min-width:320px) and (max-width:427px) {
+  .modal {
+    width: 300px;
+    padding: 56px 24px 24px 24px;
+  }
+
+  .form-button{
+    margin: 0 40px;
+  }
+}
