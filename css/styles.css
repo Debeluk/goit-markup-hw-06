@@ -280,56 +280,62 @@ footer .logo-studio:focus {
   max-width: 100%;
 }
 
-@media (min-width:1px) and (max-width:767px) and (min-resolution: 192dpi) {
-  .hero {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  ), url(../images/bgmobile@2x.jpg);
-  }
-}
-
-@media (min-width:768px) {
+@media (min-width: 1px) and (max-width: 767px) and (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(
-    to bottom,
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  ), url(../images/bgtablet@1x.jpg);
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bgmobile@2x.jpg);
   }
 }
 
-@media (min-width:768px) and (max-width:1157px) and (min-resolution: 192dpi) {
+@media (min-width: 768px) {
   .hero {
     background-image: linear-gradient(
-    to bottom,
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  ), url(../images/bgtablet@2x.jpg);
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bgtablet@1x.jpg);
   }
 }
 
-@media (min-width:1158px) {
+@media (min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(
-    to bottom,
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  ), url(../images/bgdesktop@1x.jpg);
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bgtablet@2x.jpg);
   }
 }
 
-@media (min-width:1158px) and (min-resolution: 192dpi) {
+@media (min-width: 1158px) {
   .hero {
     background-image: linear-gradient(
-    to bottom,
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  ), url(../images/bgdesktop@2x.jpg);
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bgdesktop@1x.jpg);
+    padding: 188px 0;
   }
 }
 
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bgdesktop@2x.jpg);
+    padding: 188px 0;
+  }
+}
 
 .solutions-flex {
   display: flex;
